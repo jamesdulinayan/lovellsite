@@ -109,34 +109,21 @@
 
                     <div class="col-xl-6 col-md-8">
                         <div class="contact-form">
-                            <input type="text" class='contact-control' id="name" name="name" placeholder="Your Name">
-                            <input type="text" class='contact-control' id="email" name="email" placeholder="Your Email">
-                            <input type="text" class='contact-control' id="pnum" name="pnum" placeholder="Your Phone Number">
-                            <textarea id="subject" class='contact-control' name="subject" placeholder="Your Message" style="height:150px"></textarea>
-                            <input type="submit" value="Submit">
+                            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+                                <fieldset id="fs-frm-inputs">
+                                  <input type="text" name="Name" id="name" class='contact-control' placeholder="Your Name" required="">
+                                  <input type="text" name="Email" id="email" class='contact-control' placeholder="Your Email" required="">
+                                  <input type="text" name="Subject" id="subject" class='contact-control' value="Subject">
+                                  <textarea rows="5" name="Message" id="message" class='contact-control' placeholder="Your Message" required=""></textarea>
+                                </fieldset>
+                                <input type="submit" value="Submit">
+                              </form>
                         </div>  
                     </div>
 
                 </div>
 
 
-
-               <!-- modify this form HTML and place wherever you want your form -->
-                <form
-                action="https://formspree.io/f/xdobndwz"
-                method="POST"
-                >
-                <label>
-                Your email:
-                <input type="email" name="_replyto">
-                </label>
-                <label>
-                Your message:
-                <textarea name="message"></textarea>
-                </label>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
-                </form>
 
         </div>
 
